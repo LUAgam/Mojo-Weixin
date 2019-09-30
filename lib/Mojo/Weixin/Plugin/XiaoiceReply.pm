@@ -33,7 +33,7 @@ sub call{
             return if not $onoff_flag;
             my $xiaoice = $client->search_friend(name=>"小冰的宇宙",category=>"公众号");
             if(not defined $xiaoice){
-                $client->error("未能在通讯录中搜索到 小冰的宇宙 帐号信息，请确认是否已经关注 小冰的宇宙 公众号");
+                $client->error("未能在通讯录中搜索到 小冰的宇宙1 帐号信息，请确认是否已经关注 小冰的宇宙1 公众号");
                 return;
             }
             if($msg->sender->id ne $xiaoice->id){
